@@ -1,0 +1,279 @@
+*{margin: 0;
+}
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightgray;
+}
+header{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  rgb(14, 45, 75);
+    padding: 10px;
+    text-align: center;
+    word-spacing: 5em;
+    
+}
+nav a:visited, nav a:link{
+    color: rgb(238, 230, 230);
+    text-decoration: none;
+}
+nav >ul{
+    display: inline;
+    padding: 0;
+}
+nav > ul>li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+main{
+    display: block;
+    background-image: url("images/background.jpg");
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+}
+footer{
+    padding: 15px;
+    background-color: rgb(14, 45, 75);
+    text-align: center;
+}
+aside, article{
+    padding: 2em;
+}
+aside{
+    text-align: center;
+}
+article{
+    width: 85%;
+}
+@media only screen and (min-width: 768px){
+    main{
+        display: flex;
+    }
+    aside{
+        margin-left: 2px;
+    }
+}
+.logo{
+    width: 200px;
+}
+article>img {
+    max-height:100%;
+    max-width:100%;
+}
+h1{
+    color:  rgb(14, 45, 75);
+    font-size: 1.5em;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    font-family: "Lato", sans-serif;
+}
+.subtitle{
+    max-width: 95%;
+    background-color: #0b425f;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: solid 2px goldenrod;
+    margin-top: 0.1em;
+}
+a{
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+}
+.text{
+    font-weight: 300;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0b425f;
+    padding-top: 85px;
+    text-align: justify;
+    font-size: 1.2em;
+    background-color: #e7e7e7;
+}
+h2{
+    color: goldenrod;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+.p2{
+    padding-top: 10px;
+}
+
+/*contacto*/
+
+.contact{
+    font-size: 1.1em;
+    padding-top: 15px;
+}
+
+/*productos*/
+
+.element{
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(14, 45, 75);
+    border: solid 2px rgb(163, 127, 51);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: inline-table ;
+}
+.description{
+    text-align: center;
+}
+.element-information{
+    display: flex;
+    max-width: 85%;
+    padding-left: 10px;
+    justify-content: space-between;
+    margin-bottom: 0.1em;
+}
+.element-information .description{
+    text-align: left;
+}
+.element-information .title{
+    font-weight: bold;
+    text-align: left;
+}
+.element-information .price{
+    text-align: right;
+    font-weight: bold;
+}
+.element button{
+    background:transparent;
+    color: rgb(192, 158, 73);
+    padding: 10px;
+    border:2px solid #78788c;
+    border-radius: 3px;
+    margin: 20px 0 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family:'Montserrat',sans-serif;
+    cursor:pointer;
+    transition:all .3s;
+}
+.element button:hover{
+    background:#406774;color:#fff
+}
+.imagen{
+    max-width: 100%;
+    max-height: 100%;
+    text-align:center;
+}
+.img{
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* order */
+
+.order-selected{
+    background:rgb(217, 230, 236);
+    width: 75%;
+    font-family: "Lato", sans-serif;
+}
+.order-information{
+    display: block;
+    max-width: auto;
+    font-weight: bold;
+    padding: 10px 0 15px 50px;
+    color: rgb(38, 107, 104);
+}
+.order-information .description{
+    text-align:left;
+} 
+.order-information .price{
+    color: black;
+} 
+
+.img-information{
+    padding: 35px 35px 0 35px;
+}
+.buttonBack{
+    display: block;
+    max-width: 50%;
+    min-width: 50%;
+    margin-bottom: 50px;
+    margin-left: 25%;
+    text-align-last: center;
+    font-family:'Montserrat',sans-serif;
+    font-weight: bold;
+    border:1px solid rgb(218, 165, 32);
+    background: #0b425f;
+    color: white;
+    cursor:pointer;
+    transition:all .3s;
+}
+.buttonBack:hover{
+    background:repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0) 40px,
+      rgba(0, 0, 0, 0) 20px,
+      #b8b8bb 60px,
+      rgb(216, 216, 216) 40px
+    );
+    color: #125174;
+    border: solid 2px #78788c;
+}
+
+/*formulario*/
+
+form{
+    max-width: 900px;
+    padding-top: 50px;
+    padding: 15px;
+    background-color:rgb(245, 245, 245);
+    border: solid 1px #1172a7 ;
+}
+form>h1{
+    text-align: center;
+}
+
+input{
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box; 
+    border: none; 
+    color: #525c66; 
+    font-size: 1em;
+    resize: none;
+}
+.container{
+    display: flex;
+    position: relative;
+}
+.jfield{
+    flex: 1 1 0;
+    max-width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.button{
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background: transparent;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+}
+.button:hover{
+    background:#0b425f;color:#fff
+}

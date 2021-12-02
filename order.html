@@ -88,11 +88,14 @@
                                 required />
                         </div>
                     </div>
+
                     <div class="input-order">
                         <label class="label" for="order">Producto seleccionado:</label>
-                        <input class="buy-order" type="text" name="order" id="order" value="" readonly>
+                        <input class="click-order" type="text" name="order" id="order" value="" readonly>
                     </div>
+                    
                 </div>
+
                 <input class="button" type="reset" value="Borrar">
                 <input class="button" type="submit" value="Enviar">
             </form>
@@ -120,9 +123,9 @@
             const img = orderSelected.querySelector("img");
             img.setAttribute("src", `images/${productOrder.id}.jpg`);
 
-            const buyOrder = document.querySelector(".buy-order");
-            buyOrder.setAttribute("value", productOrder.title +" - "+ productOrder.description+ "  " + productOrder.price);
-            console.log(buyOrder);
+            const clickOrder = document.querySelector(".click-order");
+            clickOrder.setAttribute("value", productOrder.title +" - "+ productOrder.description+ "  " + productOrder.price);
+            console.log(clickOrder);
         }
     });
 
